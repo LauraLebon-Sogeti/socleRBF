@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190811 17:39:07.940" rpa="false">
+<suite id="s1" name="PARTIE2" source="C:\Users\llebon\el_project\Mon_Projet\Tests\PARTIE2.txt">
+<test id="s1-t1" name="ST1_HelloWorld">
+<kw name="OuvrirNavigateur" library="webdriverTools">
+<arguments>
+<arg>http://jokerestc.fr.sogeti.com/opencruise/index.php</arg>
+<arg>Firefox</arg>
+</arguments>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Should Start With</arg>
+<arg>${navigateur}</arg>
+<arg>Chrome</arg>
+</arguments>
+<assign>
+<var>${bChromeBrowser}</var>
+</assign>
+<kw name="Should Start With" library="BuiltIn">
+<doc>Fails if the string ``str1`` does not start with the string ``str2``.</doc>
+<arguments>
+<arg>${navigateur}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20190811 17:39:08.410" level="FAIL">'Firefox' does not start with 'Chrome'</msg>
+<status status="FAIL" starttime="20190811 17:39:08.410" endtime="20190811 17:39:08.410"></status>
+</kw>
+<msg timestamp="20190811 17:39:08.410" level="INFO">${bChromeBrowser} = False</msg>
+<status status="PASS" starttime="20190811 17:39:08.410" endtime="20190811 17:39:08.410"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${bChromeBrowser}</arg>
+<arg>OpenChrome</arg>
+<arg>ELSE</arg>
+<arg>OpenFirefox</arg>
+</arguments>
+<kw name="OpenFirefox" library="webdriverTools">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<arguments>
+<arg>Firefox</arg>
+</arguments>
+<msg timestamp="20190811 17:39:08.410" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190811 17:39:08.410" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20190811 17:39:08.410" endtime="20190811 17:39:08.410"></status>
+</kw>
+<msg timestamp="20190811 17:39:08.426" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20190811 17:39:08.410" endtime="20190811 17:39:08.426"></status>
+</kw>
+<status status="FAIL" starttime="20190811 17:39:08.410" endtime="20190811 17:39:08.426"></status>
+</kw>
+<status status="FAIL" starttime="20190811 17:39:08.410" endtime="20190811 17:39:08.426"></status>
+</kw>
+<status status="FAIL" starttime="20190811 17:39:08.410" endtime="20190811 17:39:08.426"></status>
+</kw>
+<status status="FAIL" starttime="20190811 17:39:08.410" endtime="20190811 17:39:08.426" critical="yes">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<status status="FAIL" starttime="20190811 17:39:07.956" endtime="20190811 17:39:08.426"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="PARTIE2">PARTIE2</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190811 17:39:07.925" level="WARN">Automatically parsing other than '*.robot' files is deprecated. Convert 'C:\Users\llebon\el_project\Mon_Projet\Tests\PARTIE2.txt' to '*.robot' format or use '--extension' to explicitly configure which files to parse.</msg>
+</errors>
+</robot>

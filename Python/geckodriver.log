@@ -1,0 +1,7 @@
+1565467115026	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\llebon\\AppData\\Local\\Temp\\rust_mozprofile.B9Ud83OtWyIb"
+1565467117995	Marionette	INFO	Listening on port 53119
+1565467118326	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://jokerestc.fr.sogeti.com/bootstrap/js/jquery-1.9.1.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+[
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
